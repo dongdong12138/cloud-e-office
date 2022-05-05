@@ -1,20 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import TheHome from '@/views/TheHome'
+import TheLogin from '@/views/TheLogin'
 
 Vue.use(VueRouter)
 
 export default new VueRouter({
     routes: [
         {
-            name: 'home',
+            name: 'login',
             path: '/',
-            component: TheHome
+            component: TheLogin
         },
-        {
-            path: '/about',
-            component: () => import(/* webpackChunkName: 'about' */ '@/views/TheAbout')
-        },
+        // {
+        //     path: '/about',
+        //     component: () => import(/* webpackChunkName: 'about' */ '@/views/TheAbout')
+        // },
         {
             path: '*',
             redirect: '/'
